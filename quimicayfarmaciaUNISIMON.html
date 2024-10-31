@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Uni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="QUIMICAYFARMACIAGENERAL.html"><img src="1 logo tu uni.jpg" alt="Logo" id="logo">
+            </a>
+            <!-- Contenedor principal del buscador y el botón de inicio -->
+            <div class="header-main">
+                <!-- Buscador -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button" id="search-btn">Buscar</button>
+                    <div id="results-container"></div>
+
+                </div>
+            </div>
+
+             <!-- Menú desplegable -->
+             <div class="menu-toggle" id="menu-toggle">
+                <span>Universidades</span>
+            </div>
+
+            <script>// Manejo del menú desplegable
+              document.getElementById('menu-toggle').addEventListener('click', function() {
+              const dropdownMenu = document.getElementById('dropdown-menu');
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+             });
+            </script>
+        
+        </div>
+
+        <!-- Menú desplegable (oculto inicialmente) -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="UDES1.html" data-section="section1">UDES</a>
+            <a href="UNLIBRE.html" data-section="section2">UNILIBRE</a>
+            <a href="FESC1.html" data-section="section3">FESC</a>
+            <a href="UFPS.html" data-section="section4">UFPS</a>
+            <a href="UNISIMON.html" data-section="section4">UNISIMON</a>
+            <a href="UNINARIÑO.html" data-section="section4">UNINARIÑO</a>
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="university-info">
+        <h1>UNISIMON</h1>
+       
+        <div class="info-item">
+            <img src="UNI SIMON.png" alt="Logo de la Pontificia Universidad Javeriana">
+        </div>
+
+        <div class="info-item2">
+    
+            <a href="https://maps.app.goo.gl/TxZicR9JjoEEDT556" target="_blank">
+                 <i class="fas fa-map-marker-alt"></i>
+             </a>Cl. 15 #142, Los Caobos, Cúcuta, Norte de Santander
+             
+        </div>
+
+        <div class="info-item">
+            <strong>Carrera de Interés</strong> Química y farmacia
+        </div>
+        <div class="info-item">
+            <strong>Duración en Semestres</strong> 10 semestres
+        </div>
+        <div class="info-item">
+            <strong>Materias</strong>
+            <div class="lista-container">
+                <ul>
+                    <div class="info-item"><b>Semestre I</b>
+                        <li>Procesos Comunicativos I</li>
+                        <li>Cátedra Bolivariana: Ciudadanía y Democracia</li>
+                        <li>Desarrollo Personal I</li>
+                        <li>Química</li>
+                        <li>Biología Celular</li>
+                        <li>Botánica</li>
+                        <li>Historia De La Farmacia</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre II</b>
+                        <li>Procesos Comunicativos II</li>
+                        <li>Desarrollo Personal II</li>
+                        <li>Pensamiento Lógico Matemático</li>
+                        <li>Bioquímica</li>
+                        <li>Química Inorgánica</li>
+                        <li>Biofísica</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre III</b>
+                        <li>Electiva Ciencias Sociales</li>
+                        <li>Electiva Desarrollo Personal III</li>
+                        <li>Cálculo Diferencial</li>
+                        <li>Química Analítica</li>
+                        <li>Biología Molecular</li>
+                        <li>Química Orgánica I</li>
+                        <li>Farmacognosia Y Fitoquímica</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre IV</b>
+                        <li>Innovación Y Emprendimiento I</li>
+                        <li>Electiva De Ética</li>
+                        <li>Química Orgánica II</li>
+                        <li>Morfofisiología</li>
+                        <li>Fisicoquímica</li>
+                        <li>Análisis Instrumental</li>
+                        <li>Cálculo Integral</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre V</b>
+                        <li>Formación Para La Investigación I</li>
+                        <li>Innovación Y Emprendimiento II</li>
+                        <li>Fisiopatología</li>
+                        <li>Química Farmacéutica</li>
+                        <li>Farmacología I</li>
+                        <li>Microbiología</li>
+                        <li>Bioestadística</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre VI</b>
+                        <li>Electiva De Filosofía Y Humanidades</li>
+                        <li>Formación Para La Investigación II</li>
+                        <li>Electiva Complementaria I</li>
+                        <li>Farmacología II</li>
+                        <li>Tecnología Farmacéutica I (Sólidos)</li>
+                        <li>Biotecnología Farmacéutica</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre VII</b>
+                        <li>Formación Para La Investigación III</li>
+                        <li>Tecnología Farmacéutica II (Líquidos)</li>
+                        <li>Farmacia Clínica</li>
+                        <li>Diseño Racional De Fármacos</li>
+                        <li>Análisis De Alimentos</li>
+                        <li>Salud Ocupacional</li>
+                        <li>Electiva Complementaria II</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre VIII</b>
+                        <li>Tecnología Farmacéutica III (Cosméticos)</li>
+                        <li>Farmacia Magistral Y Parenteral</li>
+                        <li>Toxicología</li>
+                        <li>Farmacia Hospitalaria</li>
+                        <li>Salud Pública</li>
+                        <li>Electiva Complementaria III</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre IX</b>
+                        <li>Legislación Farmacéutica</li>
+                        <li>Tecnología Farmacéutica IV (Alimentos)</li>
+                        <li>Gestión Y Control De Calidad De Laboratorios</li>
+                        <li>Prácticas Farmacia Clínica</li>
+                        <li>Educación En Salud</li>
+                        <li>Electiva Complementaria IV</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="info-item"><b>Semestre X</b>
+                        <li>Prácticas Industriales</li>
+                        <li>Electiva Complementaria V</li>
+                    </div>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+    
+
+
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Uni. Todos los derechos reservados.</p>
+            <div class="contact-info">
+                <p>contacto: <a href="mailto:tuuni2024@gmail.com">tuuni2024@gmail.com</a></p>
+                <p>Teléfono:  +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566898421937&mibextid=JRoKGi" target="_blank" aria-label="Facebook" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/tu_uni2024?igsh=MTZpa2p0OXRoZmY2Yg==" target="_blank" aria-label="Instagram" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+     <!-- Botón para desplazarse hacia arriba -->
+     <div>
+        <button id="scrollToTopBtn" title="Ir arriba"> ↑</button>
+       </div>
+
+
+       <!-- Script de búsqueda -->
+    <script>
+        document.getElementById('search').addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+              document.getElementById('search-btn').click();
+          }
+        });
+   
+        document.getElementById('search-btn').addEventListener('click', function () {
+          const searchTerm = document.getElementById('search').value.toLowerCase();
+          const resultsContainer = document.getElementById('results-container');
+          resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+          
+          const programs = [
+              { name: "Administración de Empresas", link: 'ADMINDDEEMPRESASzGENERAL.html' },
+              { name: "Administración de Negocios Internacionales", link: 'ADMINDENEGOCIOINTERGENERAL.html' },
+              { name: "Administración Financiera", link: 'ADMINIFINANCIERAGENERAL.html' },
+              { name: "Arquitectura", link: 'ARQUITECTURAGENERAL.html' },
+              { name: "Bacteriología y Laboratorio Clínico", link: 'BACTERIOLOGIAGENERAL.html' },
+              { name: "Comercio Internacional", link: 'COMERCIOINTERNACIONALGENERAL.html' },
+              { name: "Contaduría Pública", link: 'CONTADURIAPUBLICAGENERAL.html' },
+              { name: "Derecho", link: 'DERECHOGENERAL.html' },
+              { name: "Diseño de Modas", link: 'DISEÑODEMODASGENERAL.html' },
+              { name: "Diseño Gráfico", link: 'DISEÑOGRAFICOGENERAL.html' },
+              { name: "Enfermería", link: 'ENFERMERIAGENERAL.html' },
+              { name: "Fisioterapia", link: 'FISIOTERAPIAGENERAL.html' },
+              { name: "Ingeniería Agroindustrial", link: 'INGAGROINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Agronómica", link: 'INGAGRONOMICAGENERAL.html' },
+              { name: "Ingeniería Ambiental", link: 'INGAMBIENTALGENERAL.html' },
+              { name: "Ingeniería Biotecnológica", link: 'INGBIOTECNOLOGICAGENERAL.html' },
+              { name: "Ingeniería Civil", link: 'INGCIVILGENERAL.html' },
+              { name: "Ingeniería de Sistemas", link: 'INGDESISTEMASGENERAL.html' },
+              { name: "Ingeniería de Software", link: 'INGDESOFTWAREGENERAL.html' },
+              { name: "Ingeniería Industrial", link: 'INGINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Mecánica", link: 'INGMECANICAGENERAL.html' },
+              { name: "Marketing", link: 'MARKETINGGENERAL.html' },
+              { name: "Matemáticas y Ciencias de la Computación", link: 'MATYCIENCIASDELACOMPUGENERAL.html' },
+              { name: "Medicina", link: 'MEDICINAGENERAL.html' },
+              { name: "Mercadeo y Publicidad", link: 'MERCADEOYPUBLICIDADGENERAL.html' },
+              { name: "Odontología", link: 'ODONTOLOGIAGENERAL.html' },
+              { name: "Psicología", link: 'PSICOLOGIAGENERAL.html' },
+              { name: "Química y Farmacia", link: 'QUIMICAYFARMACIAGENERAL.html' },
+              { name: "Terapia Ocupacional", link: 'TERAPIAOCUPAGENERAL.html' },
+              { name: "Trabajo Social", link: 'TRABAJOSOCIALGENERAL.html' },
+              { name: "Zootecnia", link: 'ZOOTECNIAGENERAL.html' },
+              // Agrega más programas aquí...
+          ];
+      
+          const filteredPrograms = programs.filter(program => program.name.toLowerCase().includes(searchTerm));
+      
+          if (filteredPrograms.length > 0) {
+              filteredPrograms.forEach(program => {
+                  const programDiv = document.createElement('div');
+                  programDiv.className = 'box'; // O 'box2' / 'box3' dependiendo de tu estilo
+                  programDiv.innerHTML = `<p onclick="window.location.href='${program.link}';">${program.name}</p>`;
+                  resultsContainer.appendChild(programDiv);
+              });
+          } else {
+              resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+          }
+         });
+       </script>
+      <!-- fin Script de búsqueda -->
+   
+       <script>// Obtener el botón arriba
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+   
+         // Mostrar u ocultar el botón en función del desplazamiento
+         window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           scrollToTopBtn.style.display = "block"; // Mostrar el botón
+        } else {
+           scrollToTopBtn.style.display = "none";   // Ocultar el botón
+        } 
+   
+         };
+   
+        // Al hacer clic, desplazar hacia arriba
+         scrollToTopBtn.onclick = function() {
+         window.scrollTo({top: 0, behavior: 'smooth'}); // Desplazamiento suave hacia arriba
+        };
+       </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

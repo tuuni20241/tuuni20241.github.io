@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Uni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="index.html"><img src="1 logo tu uni.jpg" alt="Logo" id="logo">
+            </a>
+            <!-- Contenedor principal del buscador y el botón de inicio -->
+            <div class="header-main">
+                <!-- Buscador -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button" id="search-btn">Buscar</button>
+                    <div id="results-container"></div>
+
+                </div>
+
+                
+            </div>
+
+             <!-- Menú desplegable -->
+             <div class="menu-toggle" id="menu-toggle">
+                <span>Universidades</span>
+            </div>
+
+            <script>// Manejo del menú desplegable
+              document.getElementById('menu-toggle').addEventListener('click', function() {
+              const dropdownMenu = document.getElementById('dropdown-menu');
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+             });
+            </script>
+        </div>
+
+        <!-- Menú desplegable (oculto inicialmente) -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="UDES1.html" data-section="section1">UDES</a>
+            <a href="UNLIBRE.html" data-section="section2">UNILIBRE</a>
+            <a href="FESC1.html" data-section="section3">FESC</a>
+            <a href="UFPS.html" data-section="section4">UFPS</a>
+            <a href="UNISIMON.html" data-section="section4">UNISIMON</a>
+            <a href="UNINARIÑO.html" data-section="section4">UNINARIÑO</a>
+        </div>
+    </header>
+
+    <div class="programas">
+        <p id="programas-academicos">PROGRAMAS ACADÉMICOS</p>
+    </div>
+    
+
+    <div class="container">
+
+        <div class="box" onclick="window.location.href='ADMINDDEEMPRESASzGENERAL.html';">
+            <p>Administración de Empresas</p> 
+        </div>
+        <div class="box" onclick="window.location.href='ARQUITECTURAGENERAL.html';">
+            <p>Arquitectura</p>
+        </div>
+         <div class="box" onclick="window.location.href='COMERCIOINTERNACIONALGENERAL.html';">
+            <p>Comercio Internacional</p>
+        </div>
+         <div class="box" onclick="window.location.href='CONTADURIAPUBLICAGENERAL.html';">
+            <p>Contaduría Pública</p>
+        </div>
+        <div class="box2" onclick="window.location.href='DERECHOGENERAL.html';">
+            <p>Derecho</p>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="box2" onclick="window.location.href='ENFERMERIAGENERAL.html';">
+            <P>Enfermería</p>
+        </div>
+        <div class="box2" onclick="window.location.href='INGAGROINDUSTRIALGENERAL.html';">
+            <P>Ingeniería Agroindustrial</p>
+        </div>
+        <div class="box2" onclick="window.location.href='INGAGRONOMICAGENERAL.html';">
+            <P>Ingeniería Agronómica</p>
+        </div>
+        <div class="box2" onclick="window.location.href='INGAMBIENTALGENERAL.html';">
+            <P>Ingeniería Ambiental</p>
+        </div>
+       <div class="box2" onclick="window.location.href='INGBIOTECNOLOGICAGENERAL.html';">
+            <p>Ingeniería Biotecnológica</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        
+
+        <div class="box2" onclick="window.location.href='INGCIVILGENERAL.html';">
+            <p>Ingeniería Civil</p>
+        </div>
+        <div class="box2" onclick="window.location.href='INGDESISTEMASGENERAL.html';">
+            <P>Ingenería de Sistemas</p>
+        </div>
+    
+        <div class="box2" onclick="window.location.href='INGINDUSTRIALGENERAL.html';">
+            <P>Ingeniería Industrial</p>
+        </div>
+         <div class="box2" onclick="window.location.href='INGMECANICAGENERAL.html';">
+            <P>Ingeniería Mecánica</p>
+        </div>
+        <div class="box2" onclick="window.location.href='ZOOTECNIAGENERAL.html';">
+            <P>Zootecnia</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Uni. Todos los derechos reservados.</p>
+            <div class="contact-info">
+                <p>contacto: <a href="mailto:tuuni2024@gmail.com">tuuni2024@gmail.com</a></p>
+                <p>Teléfono:  +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566898421937&mibextid=JRoKGi" target="_blank" aria-label="Facebook" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/tu_uni2024?igsh=MTZpa2p0OXRoZmY2Yg==" target="_blank" aria-label="Instagram" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para desplazarse hacia arriba -->
+    <div>
+        <button id="scrollToTopBtn" title="Ir arriba"> ↑</button>
+       </div>
+
+       <!-- Script de búsqueda -->
+    <script>
+        document.getElementById('search').addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+              document.getElementById('search-btn').click();
+          }
+        });
+   
+        document.getElementById('search-btn').addEventListener('click', function () {
+          const searchTerm = document.getElementById('search').value.toLowerCase();
+          const resultsContainer = document.getElementById('results-container');
+          resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+          
+          const programs = [
+              { name: "Administración de Empresas", link: 'ADMINDDEEMPRESASzGENERAL.html' },
+              { name: "Administración de Negocios Internacionales", link: 'ADMINDENEGOCIOINTERGENERAL.html' },
+              { name: "Administración Financiera", link: 'ADMINIFINANCIERAGENERAL.html' },
+              { name: "Arquitectura", link: 'ARQUITECTURAGENERAL.html' },
+              { name: "Bacteriología y Laboratorio Clínico", link: 'BACTERIOLOGIAGENERAL.html' },
+              { name: "Comercio Internacional", link: 'COMERCIOINTERNACIONALGENERAL.html' },
+              { name: "Contaduría Pública", link: 'CONTADURIAPUBLICAGENERAL.html' },
+              { name: "Derecho", link: 'DERECHOGENERAL.html' },
+              { name: "Diseño de Modas", link: 'DISEÑODEMODASGENERAL.html' },
+              { name: "Diseño Gráfico", link: 'DISEÑOGRAFICOGENERAL.html' },
+              { name: "Enfermería", link: 'ENFERMERIAGENERAL.html' },
+              { name: "Fisioterapia", link: 'FISIOTERAPIAGENERAL.html' },
+              { name: "Ingeniería Agroindustrial", link: 'INGAGROINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Agronómica", link: 'INGAGRONOMICAGENERAL.html' },
+              { name: "Ingeniería Ambiental", link: 'INGAMBIENTALGENERAL.html' },
+              { name: "Ingeniería Biotecnológica", link: 'INGBIOTECNOLOGICAGENERAL.html' },
+              { name: "Ingeniería Civil", link: 'INGCIVILGENERAL.html' },
+              { name: "Ingeniería de Sistemas", link: 'INGDESISTEMASGENERAL.html' },
+              { name: "Ingeniería de Software", link: 'INGDESOFTWAREGENERAL.html' },
+              { name: "Ingeniería Industrial", link: 'INGINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Mecánica", link: 'INGMECANICAGENERAL.html' },
+              { name: "Marketing", link: 'MARKETINGGENERAL.html' },
+              { name: "Matemáticas y Ciencias de la Computación", link: 'MATYCIENCIASDELACOMPUGENERAL.html' },
+              { name: "Medicina", link: 'MEDICINAGENERAL.html' },
+              { name: "Mercadeo y Publicidad", link: 'MERCADEOYPUBLICIDADGENERAL.html' },
+              { name: "Odontología", link: 'ODONTOLOGIAGENERAL.html' },
+              { name: "Psicología", link: 'PSICOLOGIAGENERAL.html' },
+              { name: "Química y Farmacia", link: 'QUIMICAYFARMACIAGENERAL.html' },
+              { name: "Terapia Ocupacional", link: 'TERAPIAOCUPAGENERAL.html' },
+              { name: "Trabajo Social", link: 'TRABAJOSOCIALGENERAL.html' },
+              { name: "Zootecnia", link: 'ZOOTECNIAGENERAL.html' },
+              // Agrega más programas aquí...
+          ];
+      
+          const filteredPrograms = programs.filter(program => program.name.toLowerCase().includes(searchTerm));
+      
+          if (filteredPrograms.length > 0) {
+              filteredPrograms.forEach(program => {
+                  const programDiv = document.createElement('div');
+                  programDiv.className = 'box'; // O 'box2' / 'box3' dependiendo de tu estilo
+                  programDiv.innerHTML = `<p onclick="window.location.href='${program.link}';">${program.name}</p>`;
+                  resultsContainer.appendChild(programDiv);
+              });
+          } else {
+              resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+          }
+         });
+       </script>
+      <!-- fin Script de búsqueda -->
+   
+       <script>// Obtener el botón arriba
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+   
+         // Mostrar u ocultar el botón en función del desplazamiento
+         window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           scrollToTopBtn.style.display = "block"; // Mostrar el botón
+        } else {
+           scrollToTopBtn.style.display = "none";   // Ocultar el botón
+        } 
+   
+         };
+   
+        // Al hacer clic, desplazar hacia arriba
+         scrollToTopBtn.onclick = function() {
+         window.scrollTo({top: 0, behavior: 'smooth'}); // Desplazamiento suave hacia arriba
+        };
+       </script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

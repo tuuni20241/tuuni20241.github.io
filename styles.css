@@ -1,0 +1,744 @@
+/* Estilo base para el body */
+body {
+    margin: 0;
+    /* Elimina el margen predeterminado del navegador */
+    padding: 0;
+    /* Elimina el relleno predeterminado del navegador */
+    font-family: Arial, sans-serif;
+    /* Fuente legible y común */
+    font-size: 16px;
+    /* Tamaño de fuente base */
+    line-height: 1.5;
+    /* Espaciado de línea para mejorar la legibilidad */
+    background-color: #ffffff;
+    /* Color de fondo neutro */
+    color: #333333;
+    /* Color de texto estándar */
+    box-sizing: border-box;
+    /* Incluye el padding y border en el ancho total */
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 1200px;
+    /* Limita el ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
+    padding: 0 15px;
+    /* Relleno horizontal para evitar que el contenido toque los bordes */
+}
+
+
+/* Estilo del contenedor del botón */
+.button-container {
+    text-align: center;
+    /* Centra el contenido del contenedor */
+    margin: 20px 0;
+    /* Espacio alrededor del contenedor */
+}
+
+/* Estilo del botón */
+#miBoton {
+    background-color: #15816f;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espacio interno alrededor del texto del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    font-size: 16px;
+    /* Tamaño de la fuente del botón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+}
+
+/* Estilo del botón al pasar el cursor sobre él */
+#miBoton:hover {
+    background-color: #155e52;
+    /* Color de fondo cuando se pasa el cursor */
+}
+
+
+
+
+
+
+
+/* Estilos para el encabezado */
+header {
+    position: fixed;
+    background-color: #12948d;
+    /* Color verde oscuro para el encabezado */
+    color: white;
+    padding: 17px;
+    position: relative;
+    z-index: 20;
+    /* Asegura que el encabezado esté en un nivel superior */
+}
+
+/* Estilos para el contenedor del encabezado */
+.header-content {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto;
+    /* Centra el contenido del header */
+}
+
+/* Estilos para el contenedor principal del buscador y el botón de inicio */
+.header-main {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espaciado entre el buscador y el botón de inicio */
+}
+
+
+/* Estilos para el contenedor del buscador */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaciado entre la barra de búsqueda y el botón de búsqueda */
+}
+
+/* Estilos para la barra de búsqueda */
+#search {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    /* Bordes redondeados a la izquierda */
+    width: auto;
+}
+
+#search-btn {
+    padding: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(63, 62, 62);
+    border-radius: 0 5px 5px 0;
+    /* Bordes redondeados a la derecha */
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #b4b6b6;
+    /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el botón de inicio */
+.header-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu-toggle {
+    cursor: pointer; /* Cambia el cursor a puntero al pasar por encima */
+    font-size: 18px; /* Puedes ajustar el tamaño de fuente */
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+    /* Otros estilos que desees aplicar */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 30;
+}
+
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /* Asegura que el menú esté justo debajo del encabezado */
+    right: 10px;
+    background-color: #12948d;
+    color: white;
+    padding: 20px;
+    /* Aumenta el padding */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    /* Asegura que el menú esté en un nivel superior */
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #003d33;
+    /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    /* Ancho completo del contenedor */
+    max-width: 1200px;
+    /* Ancho máximo del carrusel */
+    margin: 20px auto;
+    /* Centrar el carrusel en la página */
+    overflow: hidden;
+    z-index: 10;
+    /* Asegura que el carrusel esté en un nivel inferior al menú desplegable */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   width: 600%;
+    /* Mostrar  6 imágenes, cada una al 100% del contenedor */
+}
+
+.carousel-images img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    /* Asegura que las imágenes se adapten bien al contenedor */
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding:10px;
+    cursor: pointer;
+    z-index: 15;
+    /* Asegura que los botones del carrusel estén en un nivel superior al carrusel pero inferior al menú desplegable */
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+/* Estilos para la sección de introducción */
+.intro-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #87e4bddc;
+    border: 2px solid #ddd;
+    width: auto;
+    font-size: 17px;
+}
+
+.intro-section h2 {
+    margin-top: 0;
+}
+
+/* Estilos para la información de las secciones */
+.section-info {
+    padding: 20px;
+    background-color: #ffffff;
+    /* Fondo blanco para la sección de información */
+    margin: 20px auto;
+    max-width: 800px;
+    /* Ajusta el ancho máximo según sea necesario */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el botón debajo de las secciones */
+.button-container {
+    text-align: center;
+    /* Asegura que el contenido dentro del contenedor esté centrado */
+    margin: 20px 0;
+    /* Espacio alrededor del contenedor */
+}
+
+/* Estilo del botón */
+#button {
+    background-color: #004d40;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espacio interno alrededor del texto del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    font-size: 16px;
+    /* Tamaño de la fuente del botón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+    /* Elimina los márgenes que desalinean el botón */
+    margin: 0;
+}
+
+/* Estilo del botón al pasar el cursor sobre él */
+#button:hover {
+    background-color: #003d33;
+    /* Color de fondo cuando se pasa el cursor */
+}
+
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    /* Centra los íconos horizontalmente */
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 24px;
+    /* Ajusta el tamaño según prefieras */
+}
+
+.social-media a i {
+    display: block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+}
+
+.social-media a:hover i {
+    opacity: 0.8;
+    /* Efecto al pasar el ratón por encima */
+}
+
+/* Colores de los íconos */
+.social-media a.facebook i {
+    background-color: #64a2c9;
+}
+
+
+
+.social-media a.instagram i {
+    background-color: #d83290;
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para el logo */
+#logo {
+    height: 50px;
+    /* Ajusta la altura del logo según sea necesario */
+    border-radius: 50px;
+    border: 2px solid rgb(17, 17, 17);
+    position: absolute;
+    left: 10px;
+    /* Ubica el logo a 10px desde el borde izquierdo del encabezado */
+    top: 50%;
+    /* Centra verticalmente el logo en el encabezado */
+    transform: translateY(-50%);
+    /* Ajusta la posición vertical del logo */
+}
+
+
+
+/* Estilo del contenedor de los cuadros */
+.container {
+    background-color: #87e4bddc;
+    padding: 16px;
+    display: flex;
+    border-radius: 1px;
+    width: 100%;
+}
+
+/* Estilo de los cuadros */
+.box {
+    
+    height: 100px;
+    background-color: #12948d;
+    /* Color de fondo */
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 23px;
+    padding: 30px;
+}
+
+.box2{
+    height: 100px;
+    background-color: #12948d;
+    /* Color de fondo */
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 23px;
+    padding: 30px;
+}
+
+.box3{
+    height: 100px;
+    background-color: #12948d;
+    /* Color de fondo */
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 23px;
+    padding: 30px;
+}
+
+/* Efecto de hover para los cuadros */
+.box:hover {
+    background-color: #3fbd82;
+    transform: scale(1.05);
+}
+
+.box2:hover {
+    background-color: #3fbd82;
+    transform: scale(1.05);
+}
+
+.box3:hover {
+    background-color: #3fbd82;
+    transform: scale(1.05);
+}
+
+.programas{
+    background-color: #3fbd82;
+    width: 91.4%;
+    margin-left: 60px;
+
+
+}
+
+/* Estilo para el párrafo con id 'programas-academicos' */
+#programas-academicos {
+    font-size: 1.5em;
+    /* Tamaño de fuente grande */
+    font-weight: bold;
+    /* Negrita */
+    color: #000000;
+    /* Color de texto oscuro */
+    text-align: center;
+    /* Centra el texto */
+    margin: 20px;
+    /* Espacio alrededor del párrafo */
+    padding: 10px;
+    /* Espacio interno */
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
+
+/* Estilo de la sección de introducción */
+.intro-section2 {
+    
+    padding: 50px;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    width: auto;
+    font-size: 18px;
+}
+
+
+
+/* Estilo de la sección de preguntas */
+.questions-section1 {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: auto;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo de la sección de universidades */
+.universities-section {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+
+/* Estilo del contenedor de botones */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los botones se envuelvan en varias filas si es necesario */
+    gap: 15px;
+    /* Espacio entre los botones */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    width: 100%;
+}
+
+/* Estilo de los botones de universidad */
+.university-btn {
+    background-color: #41be95;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    /* Sin borde */
+    padding: 10px 20px;
+    /* Espacio interno alrededor del texto del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor cuando se pasa sobre el botón */
+    font-size: 16px;
+    /* Tamaño de la fuente del botón */
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+    min-width: 200px;
+    /* Ancho mínimo para los botones */
+}
+
+/* Estilo del botón al pasar el cursor sobre él */
+.university-btn:hover {
+    background-color: #003d33;
+    /* Color de fondo cuando se pasa el cursor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.university-info {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-item img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.info-item ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #201f1f;
+    /* Color oscuro para el footer */
+    color: rgb(255, 254, 254);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+/* Estilos adicionales para el footer */
+.footer-content {
+    max-width: 1200px;
+    /* Limita el ancho del contenido */
+    margin: 0 auto;
+    /* Centra el contenido */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+.info-item2 {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+}
+
+.info-item2 i {
+    font-size: 45px; /* Aumenta el tamaño del ícono */
+    color: #77dd77;  /* Color verde pastel */
+    margin-right: 8px; /* Añade separación a la derecha del ícono */
+}
+
+
+
+
+
+
+
+/*cAjones de materias*/
+.lista-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las listas se envuelvan en varias filas */
+    
+}
+
+.lista-container ul {
+    flex: 0 0 calc(35% - 20px) ; /* Cada lista ocupará el 20% del contenedor padre menos el margen */
+    padding: 10px; /* Espaciado interno de cada lista */
+    border: 2px solid #ccc; /* Agrega un borde para distinguir cada lista */
+    margin: 30px; /* Espacio entre listas */
+    background-color: #87e4bddc;
+    list-style-type: none; /* Elimina las viñetas de las listas */
+    position: relative;
+    box-sizing: border-box; /* Incluye el padding en el tamaño del contenido */
+
+}
+
+.info-item {
+    margin-bottom: 5px; /* Espacio debajo del semestre */
+}
+
+
+
+
+
+.imagen-carrera {
+    width: 400px;
+    height: 250px;
+    border: 30px solid#41be95; /* Borde verde */
+   
+}
+
+
+
+
+
+
+
+
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none; /* Ocultamos el botón por defecto */
+
+}
+
+#scrollToTopBtn:hover {
+    background-color: #003d33; /* Color al pasar el ratón */
+}

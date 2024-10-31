@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Uni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="programas-academicos.html"><img src="1 logo tu uni.jpg" alt="Logo" id="logo">
+            </a>
+            <!-- Contenedor principal del buscador y el botón de inicio -->
+            <div class="header-main">
+                <!-- Buscador -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button" id="search-btn">Buscar</button>
+                    <div id="results-container"></div>
+
+                </div>
+            </div>
+
+             <!-- Menú desplegable -->
+             <div class="menu-toggle" id="menu-toggle">
+                <span>Universidades</span>
+            </div>
+
+            <script>// Manejo del menú desplegable
+              document.getElementById('menu-toggle').addEventListener('click', function() {
+              const dropdownMenu = document.getElementById('dropdown-menu');
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+             });
+            </script>
+        </div>
+
+        <!-- Menú desplegable (oculto inicialmente) -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="UDES1.html" data-section="section1">UDES</a>
+            <a href="UNLIBRE.html" data-section="section2">UNILIBRE</a>
+            <a href="FESC1.html" data-section="section3">FESC</a>
+            <a href="UFPS.html" data-section="section4">UFPS</a>
+            <a href="UNISIMON.html" data-section="section4">UNISIMON</a>
+            <a href="UNINARIÑO.html" data-section="section4">UNINARIÑO</a>
+        </div>
+    </header>
+
+ 
+
+
+ <!-- Sección de introducción -->
+ <section class="intro-section2">
+    <h2>Marketing y Negocios Dígitales </h2>
+    <img src="img marketing.jpg" alt="imagencarrera" class="imagen-carrera">
+
+    <!--INFO GENRAL DE diseño de modas-->
+    <P> Se centra en la comprensión y aplicación de estrategias y tecnologías digitales para promover productos
+         y servicios en el entorno en línea. Su enfoque abarca desde el análisis de mercado y comportamiento del
+          consumidor hasta la creación y gestión de campañas en plataformas digitales, redes sociales, SEO
+           (optimización para motores de búsqueda) y SEM (marketing en motores de búsqueda). Además, se enfoca 
+           en la interpretación de datos y métricas para evaluar el rendimiento de las campañas, adaptando las 
+           estrategias a las necesidades cambiantes del mercado. Esta carrera busca formar profesionales
+            capacitados para desarrollar planes de marketing integrales que aprovechen las herramientas digitales, 
+        contribuyendo al crecimiento y la sostenibilidad de las empresas en un mundo cada vez más interconectado.</p>
+</section>
+
+
+
+    <section class="questions-section1">
+       
+        <ul>
+            <li>
+                <h3>Perfil ocupacional:</h3>
+                <!--INFO TRABAJOS POSIBLES-->
+                <p>El profesional en marketing y negocios dígitales se puede desempeñar como:
+                    <ul>
+                        <li>Gerente de estrategias de marketing en entornos digitales.</li>
+                        <li>Asesor y consultor de herramientas de medición y evaluación de los procesos y planes de marketing y negocios digitales.</li>
+                        <li>Coordinador de inteligencia de negocios, analítica, expansión y negocios digitales.</li>
+                        <li>Empresario y/o emprendedor en la creación y desarrollo de empresas que generen recursos productivos en la transformación comercial del país.</li>
+                        <li>Gerente de empresas privadas o públicas en el área de marketing que formula y monitorea el desarrollo de productos y servicios.</li>
+                        <li>Líder en la ejecución y desarrollo de proyectos de emprendimiento de acuerdo con la innovación en negocios digitales.</li>
+                        <li>Coordinador de Marketing digital.</li>
+                        <li>Product manager en la creación de campañas de marketing.</li>
+                    </ul>                    
+                    
+                </p>
+            </li>
+            <li>
+                <h3>Promedio salarial:</h3>
+                <!--INFO PROMEDIO SALARIAL-->
+                <p>El profesional en marketing y negocios dígitales tiene un promedio salarial de $2.102.305  mensual</p>
+            </li>
+            
+        </ul>
+    
+
+
+
+<section class="universities-section">
+    <h2>Universidades</h2>
+</section>
+
+<div class="button-container">
+    <button class="university-btn" onclick="window.location.href='marketingUNISIMON.html';">UNISIMON</button>
+</div>
+
+</section>
+
+    
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Uni. Todos los derechos reservados.</p>
+            <div class="contact-info">
+                <p>contacto: <a href="mailto:tuuni2024@gmail.com">tuuni2024@gmail.com</a></p>
+                <p>Teléfono:  +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566898421937&mibextid=JRoKGi" target="_blank" aria-label="Facebook" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/tu_uni2024?igsh=MTZpa2p0OXRoZmY2Yg==" target="_blank" aria-label="Instagram" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+     <!-- Botón para desplazarse hacia arriba -->
+     <div>
+        <button id="scrollToTopBtn" title="Ir arriba"> ↑</button>
+       </div>
+
+       <!-- Script de búsqueda -->
+    <script>
+        document.getElementById('search').addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+              document.getElementById('search-btn').click();
+          }
+        });
+   
+        document.getElementById('search-btn').addEventListener('click', function () {
+          const searchTerm = document.getElementById('search').value.toLowerCase();
+          const resultsContainer = document.getElementById('results-container');
+          resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+          
+          const programs = [
+              { name: "Administración de Empresas", link: 'ADMINDDEEMPRESASzGENERAL.html' },
+              { name: "Administración de Negocios Internacionales", link: 'ADMINDENEGOCIOINTERGENERAL.html' },
+              { name: "Administración Financiera", link: 'ADMINIFINANCIERAGENERAL.html' },
+              { name: "Arquitectura", link: 'ARQUITECTURAGENERAL.html' },
+              { name: "Bacteriología y Laboratorio Clínico", link: 'BACTERIOLOGIAGENERAL.html' },
+              { name: "Comercio Internacional", link: 'COMERCIOINTERNACIONALGENERAL.html' },
+              { name: "Contaduría Pública", link: 'CONTADURIAPUBLICAGENERAL.html' },
+              { name: "Derecho", link: 'DERECHOGENERAL.html' },
+              { name: "Diseño de Modas", link: 'DISEÑODEMODASGENERAL.html' },
+              { name: "Diseño Gráfico", link: 'DISEÑOGRAFICOGENERAL.html' },
+              { name: "Enfermería", link: 'ENFERMERIAGENERAL.html' },
+              { name: "Fisioterapia", link: 'FISIOTERAPIAGENERAL.html' },
+              { name: "Ingeniería Agroindustrial", link: 'INGAGROINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Agronómica", link: 'INGAGRONOMICAGENERAL.html' },
+              { name: "Ingeniería Ambiental", link: 'INGAMBIENTALGENERAL.html' },
+              { name: "Ingeniería Biotecnológica", link: 'INGBIOTECNOLOGICAGENERAL.html' },
+              { name: "Ingeniería Civil", link: 'INGCIVILGENERAL.html' },
+              { name: "Ingeniería de Sistemas", link: 'INGDESISTEMASGENERAL.html' },
+              { name: "Ingeniería de Software", link: 'INGDESOFTWAREGENERAL.html' },
+              { name: "Ingeniería Industrial", link: 'INGINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Mecánica", link: 'INGMECANICAGENERAL.html' },
+              { name: "Marketing", link: 'MARKETINGGENERAL.html' },
+              { name: "Matemáticas y Ciencias de la Computación", link: 'MATYCIENCIASDELACOMPUGENERAL.html' },
+              { name: "Medicina", link: 'MEDICINAGENERAL.html' },
+              { name: "Mercadeo y Publicidad", link: 'MERCADEOYPUBLICIDADGENERAL.html' },
+              { name: "Odontología", link: 'ODONTOLOGIAGENERAL.html' },
+              { name: "Psicología", link: 'PSICOLOGIAGENERAL.html' },
+              { name: "Química y Farmacia", link: 'QUIMICAYFARMACIAGENERAL.html' },
+              { name: "Terapia Ocupacional", link: 'TERAPIAOCUPAGENERAL.html' },
+              { name: "Trabajo Social", link: 'TRABAJOSOCIALGENERAL.html' },
+              { name: "Zootecnia", link: 'ZOOTECNIAGENERAL.html' },
+              // Agrega más programas aquí...
+          ];
+      
+          const filteredPrograms = programs.filter(program => program.name.toLowerCase().includes(searchTerm));
+      
+          if (filteredPrograms.length > 0) {
+              filteredPrograms.forEach(program => {
+                  const programDiv = document.createElement('div');
+                  programDiv.className = 'box'; // O 'box2' / 'box3' dependiendo de tu estilo
+                  programDiv.innerHTML = `<p onclick="window.location.href='${program.link}';">${program.name}</p>`;
+                  resultsContainer.appendChild(programDiv);
+              });
+          } else {
+              resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+          }
+         });
+       </script>
+      <!-- fin Script de búsqueda -->
+   
+       <script>// Obtener el botón arriba
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+   
+         // Mostrar u ocultar el botón en función del desplazamiento
+         window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           scrollToTopBtn.style.display = "block"; // Mostrar el botón
+        } else {
+           scrollToTopBtn.style.display = "none";   // Ocultar el botón
+        } 
+   
+         };
+   
+        // Al hacer clic, desplazar hacia arriba
+         scrollToTopBtn.onclick = function() {
+         window.scrollTo({top: 0, behavior: 'smooth'}); // Desplazamiento suave hacia arriba
+        };
+       </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
