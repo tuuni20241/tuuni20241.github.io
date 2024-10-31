@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Uni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<!-- Aquí va el contenido de tu página -->
+
+<body>
+    <!-- Encabezado -->
+    <header>
+
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="index.html"><img src="https://i.pinimg.com/564x/2d/3e/10/2d3e1010d900bbe48926d78a57a8c351.jpg" alt="Logo" id="logo">
+            </a>
+            
+         
+            <!-- Contenedor principal del buscador y el botón de inicio -->
+            <div class="header-main" >
+
+                <!-- Buscador -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button" id="search-btn">Buscar</button>
+                    <div id="results-container"></div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Menú desplegable -->
+            <div class="menu-toggle" id="menu-toggle">
+               <span>Universidades</span>
+            </div>
+        </div>
+
+        <!-- Menú desplegable (oculto inicialmente) -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="UDES1.html" data-section="section1">UDES</a>
+            <a href="UNLIBRE.html" data-section="section2">UNILIBRE</a>
+            <a href="FESC1.html" data-section="section3">FESC</a>
+            <a href="UFPS.html" data-section="section4">UFPS</a>
+            <a href="UNISIMON.html" data-section="section4">UNISIMON</a>
+            <a href="UNINARIÑO.html" data-section="section4">UNINARIÑO</a>
+        </div>
+
+       
+
+    </header>
+
+
+
+
+    <!-- Carrusel -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://i.pinimg.com/564x/a0/1d/76/a01d76e4441780e92c997fd8223bb558.jpg" alt="Imagen 1">
+            <img src="https://i.pinimg.com/736x/d5/21/fc/d521fc005a049065451a343cbf52f7a8.jpg" alt="Imagen 2">
+            <img src="https://i.pinimg.com/564x/64/31/55/643155cd8caec4c2779194a5da75e707.jpg" alt="Imagen 3">
+            <img src="https://i.pinimg.com/564x/b9/24/73/b9247377c80d0524fdfca36aff33af36.jpg" alt="Imagen 4">
+            <img src="https://i.pinimg.com/564x/e3/76/58/e37658da0a24d55d1d44470ff0906ffe.jpg" alt="Imagen 5">
+            <img src="https://i.pinimg.com/564x/f4/e3/9e/f4e39e46ba9a4a51ecbc2dcd7c3e7923.jpg" alt="Imagen 6">
+            <img src="https://i.pinimg.com/564x/55/1f/14/551f1409d128e1091039fca54698bfe3.jpg" alt="Imagen 7">
+            <img src="https://i.pinimg.com/564x/2a/32/12/2a32128fbef4c7b836812fcf93f8ac0c.jpg" alt="Imagen 8">
+        </div>
+        <button class="carousel-prev">‹</button>
+        <button class="carousel-next">›</button>
+    </div>
+
+
+
+    <!-- Sección de introducción -->
+    <section class="intro-section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos tu guía confiable para descubrir el potencial de las pincipales universidades y carreras en Cúcuta. 
+            Nuestra plataforma ofrece información detallada y precisa sobre programas académicos,
+            costos y financiamiento, planes de estudio y oportunidades laborales, así como
+            promedios salariales y perspectivas de carrera. Nuestro objetivo es empoderar a los
+            estudiantes para tomar decisiones informadas sobre su futuro profesional, ayudándolos
+            a explorar sus pasiones e intereses, encontrar la carrera 
+            perfecta y prepararse para un futuro exitoso. Confía en nosotros para encontrar tu camino
+            hacia el éxito.</p>
+    </section>
+
+
+
+    <!-- Botón debajo de las secciones -->
+    <div class="button-container">
+        <button id="miBoton">Carreras</button>
+    </div>
+
+    <script>
+        document.getElementById('miBoton').addEventListener('click', function () {
+            window.location.href = 'programas-academicos.html'; // Redirige a la misma ventana
+        });
+    </script>
+
+
+
+
+   <button id="scrollToTopBtn" title="Ir arriba"> ↑</button>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Uni. Todos los derechos reservados.</p>
+            <div class="contact-info">
+                <p>contacto <a href="tuuni2024@gmail.com">tuuni2024@gmail.com</a></p>
+                <p>Telefono: +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566898421937&mibextid=JRoKGi" target="_blank" aria-label="Facebook" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/tu_uni2024?igsh=MTZpa2p0OXRoZmY2Yg==" target="_blank" aria-label="Instagram" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

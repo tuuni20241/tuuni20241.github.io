@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Uni</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="COMERCIOINTERNACIONALGENERAL.html"><img src="1 logo tu uni.jpg" alt="Logo" id="logo">
+            </a>
+            <!-- Contenedor principal del buscador y el botón de inicio -->
+            <div class="header-main">
+                <!-- Buscador -->
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="button" id="search-btn">Buscar</button>
+                    <div id="results-container"></div>
+
+                </div>
+
+            </div>
+
+             <!-- Menú desplegable -->
+             <div class="menu-toggle" id="menu-toggle">
+                <span>Universidades</span>
+            </div>
+
+            <script>// Manejo del menú desplegable
+              document.getElementById('menu-toggle').addEventListener('click', function() {
+              const dropdownMenu = document.getElementById('dropdown-menu');
+              dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+             });
+            </script>
+        </div>
+
+        <!-- Menú desplegable (oculto inicialmente) -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <a href="UDES1.html" data-section="section1">UDES</a>
+            <a href="UNLIBRE.html" data-section="section2">UNILIBRE</a>
+            <a href="FESC1.html" data-section="section3">FESC</a>
+            <a href="UFPS.html" data-section="section4">UFPS</a>
+            <a href="UNISIMON.html" data-section="section4">UNISIMON</a>
+            <a href="UNINARIÑO.html" data-section="section4">UNINARIÑO</a>
+        </div>
+    </header>
+
+
+
+
+
+
+    <div class="university-info">
+        <h1>UDES</h1>
+       
+        <div class="info-item">
+            <img src="UDES_logo.png" alt="Logo de la UDES">
+        </div>
+
+        <div class="info-item2">
+    
+            <a href="https://maps.app.goo.gl/vzJc79DnvncD2Vkr6" target="_blank">
+                 <i class="fas fa-map-marker-alt"></i>
+             </a> Cl. 11A Nte. #3-19, Urbanizacion El Bosque, Cúcuta, Norte de Santander
+             
+        </div>
+
+
+
+        
+        <div class="info-item">
+            <strong>Carrera de Interés</strong> Comercio internacional
+        </div>
+        <div class="info-item">
+            <strong>Duración en Semestres</strong> 8 semestres
+        </div>
+        <div class="info-item">
+            <strong>Precios</strong>Semestre: $ 4.267.900
+        </div>
+        
+         <div class="info-item">
+            <strong>Materias</strong>
+            <div class="lista-container">
+                <ul>
+                    <div class="info-item"><b>SEMESTRE I</b></div>
+                    <li>principios económicos y microeconomía</li>
+                    <li>introducción al comercio exterior</li>
+                    <li>fundamentos del mercadeo</li>
+                    <li>constitución política</li>
+                    <li>contabilidad general</li>
+                    <li>matemáticas básicas</li>
+                    <li>desarrollo de competencias comunicativas</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE II</b></div>
+                    <li>macroeconomía</li>
+                    <li>acuerdos de integración económica</li>
+                    <li>gestión administrativa</li>
+                    <li>legislación comercial y tributaria</li>
+                    <li>historia socioeconómica</li>
+                    <li>electiva: valoración de empresas</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE III</b></div>
+                    <li>sistema de gestión de la calidad</li>
+                    <li>régimen aduanero i: importaciones y tránsito</li>
+                    <li>valoración aduanera y aranceles</li>
+                    <li>legislación aduanera</li>
+                    <li>costos y presupuesto</li>
+                    <li>metodología de la investigación</li>
+                    <li>electiva: doing businness</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE IV</b></div>
+                    <li>régimen aduanero ii: exportaciones</li>
+                    <li>legislación cambiaria</li>
+                    <li>análisis financiero</li>
+                    <li>estadística</li>
+                    <li>emprendimiento e innovación</li>
+                    <li>electiva: mercado bursátil</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE V</b></div>
+                    <li>relaciones económicas internacionales</li>
+                    <li>logística y distribución física internacional</li>
+                    <li>bloques económicos y geopolítica</li>
+                    <li>legislación internacional</li>
+                    <li>econometría</li>
+                    <li>gestión de proyectos</li>
+                    <li>electiva: habilidades gerenciales</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE VI</b></div>
+                    <li>inversión extranjera</li>
+                    <li>pensamiento estratégico y competitividad</li>
+                    <li>plan de negocios de exportación e importación</li>
+                    <li>responsabilidad social y sostenibilidad</li>
+                    <li>proyecto i</li>
+                    <li>electiva: mercado bursátil</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE VII</b></div>
+                    <li>e-commerce</li>
+                    <li>mercado internacional</li>
+                    <li>gestión de negocios internacionales</li>
+                    <li>banco y bolsa de valores</li>
+                    <li>proyecto ii</li>
+                    <li>ética profesional</li>
+                    <li>electiva: emprendimiento de nuevos negocios</li>
+                </ul>
+                
+                <ul>
+                    <div class="info-item"><b>SEMESTRE VIII</b></div>
+                    <li>prácticas formativas empresariales</li>
+                    <li>trabajo de grado</li>
+                </ul>
+                
+            
+            </div>
+         </div>
+    </div>
+    
+
+
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Uni. Todos los derechos reservados.</p>
+            <div class="contact-info">
+                <p>contacto: <a href="mailto:tuuni2024@gmail.com">tuuni2024@gmail.com</a></p>
+                <p>Teléfono:  +123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566898421937&mibextid=JRoKGi" target="_blank" aria-label="Facebook" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/tu_uni2024?igsh=MTZpa2p0OXRoZmY2Yg==" target="_blank" aria-label="Instagram" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para desplazarse hacia arriba -->
+    <div>
+        <button id="scrollToTopBtn" title="Ir arriba"> ↑</button>
+       </div>
+
+
+       <!-- Script de búsqueda -->
+    <script>
+        document.getElementById('search').addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+              document.getElementById('search-btn').click();
+          }
+        });
+   
+        document.getElementById('search-btn').addEventListener('click', function () {
+          const searchTerm = document.getElementById('search').value.toLowerCase();
+          const resultsContainer = document.getElementById('results-container');
+          resultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+          
+          const programs = [
+              { name: "Administración de Empresas", link: 'ADMINDDEEMPRESASzGENERAL.html' },
+              { name: "Administración de Negocios Internacionales", link: 'ADMINDENEGOCIOINTERGENERAL.html' },
+              { name: "Administración Financiera", link: 'ADMINIFINANCIERAGENERAL.html' },
+              { name: "Arquitectura", link: 'ARQUITECTURAGENERAL.html' },
+              { name: "Bacteriología y Laboratorio Clínico", link: 'BACTERIOLOGIAGENERAL.html' },
+              { name: "Comercio Internacional", link: 'COMERCIOINTERNACIONALGENERAL.html' },
+              { name: "Contaduría Pública", link: 'CONTADURIAPUBLICAGENERAL.html' },
+              { name: "Derecho", link: 'DERECHOGENERAL.html' },
+              { name: "Diseño de Modas", link: 'DISEÑODEMODASGENERAL.html' },
+              { name: "Diseño Gráfico", link: 'DISEÑOGRAFICOGENERAL.html' },
+              { name: "Enfermería", link: 'ENFERMERIAGENERAL.html' },
+              { name: "Fisioterapia", link: 'FISIOTERAPIAGENERAL.html' },
+              { name: "Ingeniería Agroindustrial", link: 'INGAGROINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Agronómica", link: 'INGAGRONOMICAGENERAL.html' },
+              { name: "Ingeniería Ambiental", link: 'INGAMBIENTALGENERAL.html' },
+              { name: "Ingeniería Biotecnológica", link: 'INGBIOTECNOLOGICAGENERAL.html' },
+              { name: "Ingeniería Civil", link: 'INGCIVILGENERAL.html' },
+              { name: "Ingeniería de Sistemas", link: 'INGDESISTEMASGENERAL.html' },
+              { name: "Ingeniería de Software", link: 'INGDESOFTWAREGENERAL.html' },
+              { name: "Ingeniería Industrial", link: 'INGINDUSTRIALGENERAL.html' },
+              { name: "Ingeniería Mecánica", link: 'INGMECANICAGENERAL.html' },
+              { name: "Marketing", link: 'MARKETINGGENERAL.html' },
+              { name: "Matemáticas y Ciencias de la Computación", link: 'MATYCIENCIASDELACOMPUGENERAL.html' },
+              { name: "Medicina", link: 'MEDICINAGENERAL.html' },
+              { name: "Mercadeo y Publicidad", link: 'MERCADEOYPUBLICIDADGENERAL.html' },
+              { name: "Odontología", link: 'ODONTOLOGIAGENERAL.html' },
+              { name: "Psicología", link: 'PSICOLOGIAGENERAL.html' },
+              { name: "Química y Farmacia", link: 'QUIMICAYFARMACIAGENERAL.html' },
+              { name: "Terapia Ocupacional", link: 'TERAPIAOCUPAGENERAL.html' },
+              { name: "Trabajo Social", link: 'TRABAJOSOCIALGENERAL.html' },
+              { name: "Zootecnia", link: 'ZOOTECNIAGENERAL.html' },
+              // Agrega más programas aquí...
+          ];
+      
+          const filteredPrograms = programs.filter(program => program.name.toLowerCase().includes(searchTerm));
+      
+          if (filteredPrograms.length > 0) {
+              filteredPrograms.forEach(program => {
+                  const programDiv = document.createElement('div');
+                  programDiv.className = 'box'; // O 'box2' / 'box3' dependiendo de tu estilo
+                  programDiv.innerHTML = `<p onclick="window.location.href='${program.link}';">${program.name}</p>`;
+                  resultsContainer.appendChild(programDiv);
+              });
+          } else {
+              resultsContainer.innerHTML = '<p>No se encontraron resultados.</p>';
+          }
+         });
+       </script>
+      <!-- fin Script de búsqueda -->
+   
+       <script>// Obtener el botón arriba
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+   
+         // Mostrar u ocultar el botón en función del desplazamiento
+         window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           scrollToTopBtn.style.display = "block"; // Mostrar el botón
+        } else {
+           scrollToTopBtn.style.display = "none";   // Ocultar el botón
+        } 
+   
+         };
+   
+        // Al hacer clic, desplazar hacia arriba
+         scrollToTopBtn.onclick = function() {
+         window.scrollTo({top: 0, behavior: 'smooth'}); // Desplazamiento suave hacia arriba
+        };
+       </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
